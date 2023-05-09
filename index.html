@@ -5,43 +5,45 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Apoiadores AGMBR</title>
+  <link rel="shortcut icon" type="image/png" href="/assets/cairDosolRom.jpg">
   <style>
-    /* Estilos gerais */
     body {
       font-family: Arial, sans-serif;
       background-color: #f5f5f5;
       color: #444;
+      margin: 0;
     }
 
-    /* Estilos para o cabeçalho */
     header {
       background-color: #1a1a1a;
       color: #fff;
       padding: 20px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       display: flex;
-      align-items: center;
+      justify-content: center;
+      position: relative;
+      /* movido para cá */
     }
 
-    .logo {
-      width: 150px;
-      height: 150px;
-      margin-right: 20px;
-      border-radius: 50%;
+    header img {
+      width: 200px;
+      height: 200px;
+      border-radius: 20%;
       border: 2px solid #fff;
+      object-fit: contain;
     }
 
-    .centered {
+    header h1 {
       margin: 0;
-      font-size: 32px;
-      font-weight: normal;
+      margin-left: 20px;
+      font-size: 2em;
     }
 
-    /* Estilos para a lista de patrocinadores */
     .sponsor-list {
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-wrap: wrap;
       margin: 50px auto;
       max-width: 800px;
     }
@@ -58,7 +60,7 @@
       box-sizing: border-box;
     }
 
-    .sponsor-card a img {
+    .sponsor-card img {
       max-width: 100%;
       border-radius: 50%;
       width: 200px;
@@ -67,117 +69,123 @@
       object-fit: contain;
     }
 
-    .sponsor-card h2 {
-      margin: 10px 0;
-      font-size: 20px;
-      font-weight: normal;
-      color: #1a1a1a;
-    }
-
-    .sponsor-card p {
-      margin: 10px 0;
-      font-size: 16px;
-      color: #666;
-    }
-
-    /* Estilos para dispositivos móveis */
-    @media (max-width: 768px) {
-      .sponsor-card {
-        width: 100%;
-        margin: 20px 0;
-      }
-
-      .logo {
-        width: 100px;
-        height: 100px;
-      }
-    }
-
-    /* Estilos para o rodapé */
     footer {
       margin-top: 50px;
       text-align: center;
       background-color: #1a1a1a;
-      padding: 20px;
       color: #fff;
+      padding: 20px;
+    }
+
+    footer div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
     }
 
     footer img {
-      width: 150px;
-      height: 150px;
+      width: 50px;
+      height: 50px;
       border-radius: 50%;
       border: 2px solid #fff;
+      margin-right: 20px;
+    }
+
+    footer p {
+      margin: 0;
+      text-align: left;
+      font-size: 1.2em;
+    }
+
+    footer p a img {
+      width: 40px;
+      height: 40px;
+    }
+
+    @media (max-width: 768px) {
+      header img {
+        width: 100px;
+        height: 100px;
+      }
+
+      header h1 {
+        font-size: 1.5em;
+      }
+
+      .sponsor-list {
+        margin: 20px auto;
+      }
+
+      .sponsor-card {
+        margin: 10px;
+        padding: 10px;
+        width: 150px;
+      }
+
+      .sponsor-card img {
+        width: 150px;
+        height: 150px;
+      }
+
+      footer div {
+        flex-direction: column;
+      }
+
+      footer img {
+        margin: 0 0 20px 0;
+      }
+
+      footer p {
+        font-size: 1em;
+      }
+
+      footer p a img {
+        width: 30px;
+        height: 30px;
+      }
     }
   </style>
 </head>
 
 <body>
-  <!-- Cabeçalho -->
-  <header>
-    <img src="../../assets/logoAGMBR-min39.png" alt="Logo da AGMBR" class="logo">
-    <h1 class="centered">APOIADORES</h1>
+  <header
+    style="padding: 70px; background-color: #1a1a1a; color: #fff; box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); display: flex; justify-content: center;">
+    <a href="https://wa.me/11999521668">
+      <img src="/assets/logoAGMBR-min39.png" alt="Logo da AGMBR"
+        style="width: 200px; height: 200px; border-radius: 20%; border: 2px solid #fff; object-fit: contain; position: absolute; left: 0;">
+    </a>
+    <h1 style="text-align: center;">APOIADORES</h1>
   </header>
 
-  <!-- Lista de patrocinadores -->
   <div class="sponsor-list">
-    <div class="sponsor-card">
-      <a href="#">
-        <img src="../../assets/smartcell34.png" alt="Logo do patrocinador Smartcell" />
-      </a>
-      <h2>Nome do patrocinador</h2>
-      <p>Descrição do patrocinador</p>
-    </div>
-    <div class="sponsor-card">
-      <a href="#">
-        <img src="../../assets/vaiSerHot.jpg" alt="Logo do patrocinador Vai Ser Hot" />
-      </a>
-      <h2>Nome do patrocinador</h2>
-      <p>Descrição do patrocinador</p>
-    </div>
-    <div class="sponsor-card">
-      <a href="#">
-        <img src="../../assets/casuloDança.jpg" alt="Logo do patrocinador Casulo Dança" />
-      </a>
-      <h2>Nome do patrocinador</h2>
-      <p>Descrição do patrocinador</p>
-    </div>
-    <div class="sponsor-card">
-      <a href="#">
-        <img src="../../assets/cléristonMassoterapeuta.jpg" alt="Logo do patrocinador Clériston Massoterapeuta" />
-      </a>
-      <h2>Nome do patrocinador</h2>
-      <p>Descrição do patrocinador</p>
-    </div>
-    <div class="sponsor-card">
-      <a href="#">
-        <img src="../../assets/fmInfo.jpg" alt="Logo do patrocinador FM Info" />
-      </a>
-      <h2>Nome do patrocinador</h2>
-      <p>Descrição do patrocinador</p>
-    </div>
-    <div class="sponsor-card">
-      <a href="#">
-        <img src="../../assets/podólogaFabiana.jpg" alt="Logo do patrocinador Podóloga Fabiana" />
-      </a>
-      <h2>Nome do patrocinador</h2>
-      <p>Descrição do patrocinador</p>
-    </div>
-    <div class="sponsor-card">
-      <a href="#">
-        <img src="../../assets/portalDosOculos.jpg" alt="Logo do patrocinador Portal dos Óculos" />
-      </a>
-      <h2>Nome do patrocinador</h2>
-      <p>Descrição do patrocinador</p>
-    </div>
+    <div class="sponsor-card"><a href="https://www.facebook.com/smartcell.braganca/"><img src="/assets/smartcell34.png"
+          alt="Logo do patrocinador Smartcell"></a></div>
+    <div class="sponsor-card"><a href="https://www.vaiserhot.com.br/"><img src="/assets/vaiSerHot.jpg"
+          alt="Logo do patrocinador Vai Ser Hot"></a></div>
+    <div class="sponsor-card"><a href="https://www.facebook.com/Casulodanca/?locale=pt_BR"><img
+          src="/assets/casuloDança.jpg" alt="Logo do patrocinador Casulo Dança"></a></div>
+    <div class="sponsor-card"><a href="https://www.facebook.com/cleristonmassoterapeuta/"><img
+          src="/assets/cléristonMassoterapeuta.jpg" alt="Logo do patrocinador Clériston Massoterapeuta"></a></div>
+    <div class="sponsor-card"><a href="https://pt-br.facebook.com/@fminformaticabp/"><img src="/assets/fmInfo.jpg"
+          alt="Logo do patrocinador FM Informática"></a></div>
+    <div class="sponsor-card"><a href="https://www.instagram.com/biaf._sales/"><img src="/assets/podólogaFabiana.jpg"
+          alt="Logo do patrocinador Podóloga Fabiana"></a></div>
+    <div class="sponsor-card"><a
+        href="https://m.facebook.com/people/Portal-Dos-%C3%93culos/100076323311100/?locale=ms_MY"><img
+          src="/assets/portalDosOculos.jpg" alt="Logo do patrocinador Portal dos Óculos"></a></div>
   </div>
 
-  <!-- Rodapé -->
   <footer>
-    <img src="../../assets/adalto_bjj.jpg" alt="Foto do Associado Prado">
-    <p>Prado
-      <br>(Associado)<br>
-      <br>Dev. Jr.<br>
+    <img src="/assets/cairDosolRom.jpg" alt="Foto do Associado Prado">
+    <p style="text-align: center;">
+      Prado<br>
+      Dev. Jr. Front-End <br><br>
+      <a href="https://wa.me/19984570802" style="display: inline-block;">
+        <img src="/assets/icons8-whatsapp.gif" alt="Ícone do WhatsApp" style="width: 30px; height: 30px;">
+      </a>
     </p>
+    <span>Adalto Prado &copy; 2023 Todos os direitos reservados.</span>
   </footer>
 </body>
 
